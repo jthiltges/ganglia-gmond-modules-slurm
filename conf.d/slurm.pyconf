@@ -1,0 +1,18 @@
+modules {
+  module {
+    name = "slurm"
+    language = "python"
+    #param cg_cpuset { value = '/cgroup/cpuset/slurm' }
+    #param cg_memory { value = '/cgroup/memory/slurm' }
+  }
+}
+
+collection_group {
+  collect_every = 30
+  time_threshold = 50
+
+  metric {
+    name_match = "slurm_(.*+)"
+  }
+
+}
