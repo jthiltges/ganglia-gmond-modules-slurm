@@ -126,12 +126,16 @@ def metric_init(params):
         'name'        : 'slurm_alloc_mem',
         'description' : 'Allocated memory (reserved for jobs)',
         'units'       : 'bytes',
+        'value_type'  : 'double',
+        'format'      : '%.0f',
         'slope'       : 'both', # gauge type
     }))
     descriptors.append(create_desc(Desc_Skel, {
         'name'        : 'slurm_used_mem',
         'description' : 'Used memory',
         'units'       : 'bytes',
+        'value_type'  : 'double',
+        'format'      : '%.0f',
         'slope'       : 'both', # gauge type
     }))
 
