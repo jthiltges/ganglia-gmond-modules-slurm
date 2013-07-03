@@ -12,7 +12,16 @@ collection_group {
   time_threshold = 50
 
   metric {
-    name_match = "slurm_(.*+)"
+    name = "slurm_alloc_mem"
+    title = "Allocated memory, reserved for jobs"
+  }
+  metric {
+    name = "slurm_used_mem"
+    title = "Used memory"
+  }
+  metric {
+    name = "slurm_alloc_cpu"
+    title = "Allocated CPUs"
   }
 
 }
