@@ -120,16 +120,19 @@ def metric_init(params):
         'name'        : 'slurm_alloc_cpu',
         'description' : 'Allocated CPUs',
         'units'       : 'CPUs',
+        'slope'       : 'both', # gauge type
     }))
     descriptors.append(create_desc(Desc_Skel, {
         'name'        : 'slurm_alloc_mem',
         'description' : 'Allocated memory (reserved for jobs)',
         'units'       : 'bytes',
+        'slope'       : 'both', # gauge type
     }))
     descriptors.append(create_desc(Desc_Skel, {
         'name'        : 'slurm_used_mem',
         'description' : 'Used memory',
         'units'       : 'bytes',
+        'slope'       : 'both', # gauge type
     }))
 
     return descriptors
