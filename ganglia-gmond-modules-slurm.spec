@@ -1,6 +1,6 @@
 Name:		ganglia-gmond-modules-slurm
 Version:	0.1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Ganglia module for reporting SLURM worker stats
 
 Group:		System Environment/Base
@@ -10,7 +10,7 @@ Source0:	%{name}-%{version}.tar.bz2
 
 BuildArch:	noarch
 BuildRequires:	python-devel
-Requires:	ganglia-gmond, python, ganglia-gmond-modules-python
+Requires:	ganglia-gmond, python, ganglia-gmond-python
 
 # This package produces no debuginfo
 %global debug_package %{nil}
